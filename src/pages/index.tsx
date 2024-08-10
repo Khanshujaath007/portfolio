@@ -5,10 +5,8 @@ import { Button } from "@/components/ui/button";
 import {
   ChevronRight,
   Code2,
-  Frame,
-  SearchCheck,
-  Eye,
-  MonitorSmartphone,
+  Database,
+  ServerIcon,
 } from "lucide-react";
 import { TriangleDownIcon } from "@radix-ui/react-icons";
 import Spline from "@splinetool/react-spline";
@@ -28,41 +26,29 @@ import VanillaTilt from "vanilla-tilt";
 import { motion } from "framer-motion";
 
 const aboutStats = [
-  { label: "Years of experience", value: "3+" },
-  { label: "Technologies mastered", value: "5+" },
-  { label: "Companies worked with", value: "15+" },
+  { label: "Months of experience", value: "6+" },
+  { label: "Technologies used", value: "5+" },
+  { label: "Companies worked with", value: "2+" },
 ];
 
 const projects = [
   {
-    title: "Unqueue",
-    description: "E-commerce platform for selling digital products",
-    image: "/assets/unqueue.webm",
-    href: "https://unqueue.shop/",
+    title: "Yelpcamp",
+    description: "Platform for advertising camping locations",
+    image: "/assets/yelpcamp.png",
+    href: "https://github.com/Khanshujaath007/YelpCamp",
   },
   {
-    title: "InfiniteVPS",
-    description: "High performance VPS hosting solution",
-    image: "/assets/infinitevps.webm",
-    href: "#",
-  },
-  {
-    title: "TranslateBot",
-    description: "Powerful Multilingual Translation Bot for Discord",
-    image: "/assets/translate_bot.webm",
-    href: "https://translatebot.app/",
-  },
-  {
-    title: "Wrona",
-    description: "Robotics-focused technology company",
-    image: "/assets/wrona.jpeg",
-    href: "https://www.wrona.com/",
+    title: "TesseractBot",
+    description: "Powerful Translation Bot using open source tool",
+    image: "/assets/OCR-3.png",
+    href: "https://github.com/Khanshujaath007/tesseract_bot",
   },
   {
     title: "This website",
     description: "My personal website",
     image: "/assets/portfolio.webm",
-    href: "https://github.com/wendoj/portfolio",
+    href: "https://github.com/Khanshujaath007/portfolio",
   },
 ];
 
@@ -74,28 +60,16 @@ const services = [
     icon: Code2,
   },
   {
-    service: "UX Design",
+    service: "Backend Devepolment",
     description:
-      "Building intuitive, user-centric designs that drive engagement and conversion.",
-    icon: Frame,
+      "Backend developer skilled in building robust and scalable systems.",
+    icon: Database,
   },
   {
-    service: "SEO Optimization",
+    service: "DevOps/SRE",
     description:
-      "Enhancing your website's visibility in search engines for increased organic traffic.",
-    icon: SearchCheck,
-  },
-  {
-    service: "Responsive Design",
-    description:
-      "Designing websites that look and perform equally well on all devices and screen sizes.",
-    icon: MonitorSmartphone,
-  },
-  {
-    service: "Backend Development",
-    description:
-      "Developing robust, scalable server-side logic for a wide range of web applications.",
-    icon: Eye,
+      "Foundational understanding of automation, AWS, and cloud infrastructure management.",
+    icon: ServerIcon,
   },
 ];
 
@@ -190,9 +164,9 @@ export default function Home() {
               data-scroll-speed=".09"
               className="flex flex-row items-center space-x-1.5"
             >
-              <span className={styles.pill}>next.js</span>
-              <span className={styles.pill}>tailwindcss</span>
-              <span className={styles.pill}>typescript</span>
+              <span className={styles.pill}>Full-stack</span>
+              <span className={styles.pill}>DevOps</span>
+              <span className={styles.pill}>Backend</span>
             </div>
             <div>
               <h1
@@ -206,7 +180,7 @@ export default function Home() {
                   <br />
                 </span>
                 <span className="clash-grotesk text-gradient text-6xl 2xl:text-8xl">
-                  WendoJ.
+                  Shujaath.
                 </span>
               </h1>
               <p
@@ -215,7 +189,7 @@ export default function Home() {
                 data-scroll-speed=".06"
                 className="mt-1 max-w-lg tracking-tight text-muted-foreground 2xl:text-xl"
               >
-                An experienced full-stack website developer with a passion for
+                An experienced full-stack developer with a passion for
                 crafting unique digital experiences.
               </p>
             </div>
@@ -225,7 +199,7 @@ export default function Home() {
               data-scroll-speed=".06"
               className="flex flex-row items-center space-x-1.5 pt-6"
             >
-              <Link href="mailto:wendoj@proton.me" passHref>
+              <Link href="mailto:khanshujaath007@gmail.com" passHref>
                 <Button>
                   Get in touch <ChevronRight className="ml-1 h-4 w-4" />
                 </Button>
@@ -269,15 +243,15 @@ export default function Home() {
             className="my-14 flex max-w-6xl flex-col justify-start space-y-10"
           >
             <h2 className="py-16  pb-2 text-3xl font-light leading-normal tracking-tighter text-foreground xl:text-[40px]">
-              I&apos;m an experienced full-stack developer proficient in{" "}
-              <Link
+              I&apos;m an experienced software engineer proficient in{" "}
+              {/* <Link
                 href="https://create.t3.gg/"
                 target="_blank"
                 className="underline"
               >
-                TypeScript, Tailwind, and Next.js
-              </Link>{" "}
-              since 2021. My experience spans from startups to mid-sized
+                
+              </Link>{" "} */}
+              building full-stack applications. My experience spans from startups to mid-sized
               companies, where I&apos;ve been instrumental in the entire product
               design process; from ideation and wireframing, through
               prototyping, to the delivery of the final product, all while
@@ -446,7 +420,7 @@ export default function Home() {
               I&apos;m currently available for freelance work and open to
               discussing new projects.
             </p>
-            <Link href="mailto:wendoj@proton.me" passHref>
+            <Link href="mailto:khanshujaath007@gmail.com" passHref>
               <Button className="mt-6">Get in touch</Button>
             </Link>
           </div>

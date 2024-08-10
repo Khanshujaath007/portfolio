@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
-import { MailIcon } from "lucide-react";
+import { Linkedin, MailIcon } from "lucide-react";
 
 export default function Footer() {
   // get the current time in UTC+1 time zone
@@ -29,12 +29,12 @@ export default function Footer() {
           <p className="text-xs text-muted-foreground">
             Made with ❤️ by{" "}
             <Link
-              href="https://github.com/wendoj"
+              href="https://github.com/Khanshujaath007/"
               target="_blank"
               passHref
               className="text-foreground transition hover:text-primary"
             >
-              wendoj
+              shujaath
             </Link>
           </p>
           <hr className="hidden h-6 border-l border-muted md:flex" />
@@ -43,14 +43,20 @@ export default function Footer() {
             <p className="text-sm font-semibold">{time} UTC+1</p>
           </span>
         </span>
+
         <Link
-          href="mailto:wendoj@proton.me"
+          href="mailto:khanshujaath007@gmail.com"
           passHref
           className="text-xs text-muted-foreground hover:text-foreground"
         >
           <Button variant={"outline"}>
+          <a href="https://www.linkedin.com/in/shujaathullakhan/">
+            <Linkedin className="h-4 w-4 md:mr-2" />
+          </a>
+          </Button>
+          <Button variant={"outline"}>
             <MailIcon className="h-4 w-4 md:mr-2" />
-            <span className="hidden md:flex">wendoj@proton.me</span>
+            <span className="hidden md:flex">khanshujaath007.com</span>
           </Button>
         </Link>
       </div>
