@@ -19,7 +19,7 @@ const withPWA = WithPWA({
 // @ts-ignore
 const config = withPWA({
   reactStrictMode: true,
-
+  
   /**
    * If you are using `appDir` then you must comment the below `i18n` config out.
    *
