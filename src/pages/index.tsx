@@ -33,6 +33,18 @@ const aboutStats = [
 
 const projects = [
   {
+    title: "Ecomm (Ecommerce App)",
+    description: "A React-based eCommerce app with a modern UI, featuring product browsing and a shopping cart.",
+    image: "/assets/ecomm.png",
+    href: "https://github.com/Khanshujaath007/thinsil-ecommerce",
+  },
+  {
+    title: "Expense Calculator",
+    description: "A simple and intuitive app for tracking and managing expenses.",
+    image: "/assets/expense_tracker.png",
+    href: "https://github.com/Khanshujaath007/expense-tracker",
+  },
+  {
     title: "Yelpcamp",
     description: "Platform for advertising camping locations",
     image: "/assets/yelpcamp.png",
