@@ -1,8 +1,4 @@
-/**
- * Run `build` or `dev` with `SKIP_ENV_VALIDATION` to skip env validation. This is especially useful
- * for Docker builds.
- */
-await import("./src/env.js");
+// await import("./src/env.js"); // Comment this line out if not needed
 import WithPWA from "next-pwa";
 
 const withPWA = WithPWA({
@@ -20,11 +16,8 @@ const withPWA = WithPWA({
 const config = withPWA({
   reactStrictMode: true,
   
-  /**
-   * If you are using `appDir` then you must comment the below `i18n` config out.
-   *
-   * @see https://github.com/vercel/next.js/issues/41980
-   */
+  output: 'export', // Ensure this line is here for static export
+  
   i18n: {
     locales: ["en"],
     defaultLocale: "en",
