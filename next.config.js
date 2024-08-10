@@ -18,6 +18,8 @@ const withPWA = WithPWA({
  */
 // @ts-ignore
 const config = withPWA({
+  basePath: "/portfolio",
+  output: "export",
   reactStrictMode: true,
 
   /**
